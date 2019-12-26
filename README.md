@@ -1,4 +1,6 @@
-# Angular8-SpringBoot-CRUD-Tutorial
-Develop a single page application(SPA) using Angular 8 as a front-end and Spring boot restful API as a backend.
+# Angular8-SpringBoot
+This is my personal project
 
-https://www.javaguides.net/2019/06/spring-boot-angular-7-crud-example-tutorial.html
+Spring boot 2.2.*
+Angular 8 with material
+
