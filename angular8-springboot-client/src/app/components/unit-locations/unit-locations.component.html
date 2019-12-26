@@ -1,0 +1,26 @@
+<h3>New Unit Registration Form</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Unit Name</label>
+      <input type="text" class="form-control" id="unitName" required [(ngModel)]="unitLocation.unitName" name="unitName">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Unit City</label>
+      <input type="text" class="form-control" id="unitCity" required [(ngModel)]="unitLocation.unitCity" name="unitCity">
+    </div>
+
+    <div class="form-group">
+        <label for="name">Unit Pincode</label>
+        <input type="text" class="form-control" id="unitPinCode" required [(ngModel)]="unitLocation.unitPinCode" name="unitPinCode">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+  <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+</div>

@@ -1,0 +1,23 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Employee Role List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Role Name</th>
+            <th>Role Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let r of role | async">
+            <td>{{r.roleName}}</td>
+            <td>{{r.roleDesc}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  
